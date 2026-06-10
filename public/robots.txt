@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://dmitthedazed.github.io/MeowGPT/sitemap.xml
+Sitemap: https://chat-kappa-eight-76.vercel.app/sitemap.xml

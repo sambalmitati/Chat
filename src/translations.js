@@ -20,46 +20,7 @@ export const translations = {
     suggestionGaleri: "Our Love Story",
     suggestionUcapan: "Wedding Gift",
 
-    // Models
-    models: {
-      MeowGPT: "MeowGPT",
-      "MeowGPT Turbo": "MeowGPT Turbo",
-      "MeowGPT Mini": "MeowGPT Mini",
-    },
-
-    modelDescriptions: {
-      MeowGPT: "Purrfect for most tasks 🐱",
-      "MeowGPT Turbo": "Fast as a cheetah 🐆",
-      "MeowGPT Mini": "Kitten-sized efficiency 🐾",
-    },
-
-    // Account Menu
-    upgradePlan: "Upgrade plan",
-    settings: "Settings",
-    help: "Help",
     madeBy: "Developed by Simpul Creative",
-
-    // Settings Modal
-    settingsTitle: "Settings",
-    appearance: "Appearance",
-    theme: "Theme",
-    language: "Language",
-    general: "General",
-
-    // Theme Options
-    themes: {
-      light: "Light",
-      dark: "Dark",
-      system: "System",
-    },
-
-    // Languages
-    languages: {
-      en: "🇺🇸 English",
-      id: "🇮🇩 Bahasa Indonesia",
-      meow: "🐱 Meow",
-    },
-
     // Footer
     disclaimer:
       "Terima kasih telah menjadi bagian dari hari kami",
@@ -143,46 +104,7 @@ export const translations = {
     suggestionGaleri: "Our Love Story",
     suggestionUcapan: "Wedding Gift",
 
-    // Models
-    models: {
-      MeowGPT: "MeowGPT",
-      "MeowGPT Turbo": "MeowGPT Turbo",
-      "MeowGPT Mini": "MeowGPT Mini",
-    },
-
-    modelDescriptions: {
-      MeowGPT: "Purrfect for most tasks 🐱",
-      "MeowGPT Turbo": "Fast as a cheetah 🐆",
-      "MeowGPT Mini": "Kitten-sized efficiency 🐾",
-    },
-
-    // Account Menu
-    upgradePlan: "Upgrade plan",
-    settings: "Settings",
-    help: "Help",
     madeBy: "Developed by Simpul Creative",
-
-    // Settings Modal
-    settingsTitle: "Settings",
-    appearance: "Appearance",
-    theme: "Theme",
-    language: "Language",
-    general: "General",
-
-    // Theme Options
-    themes: {
-      light: "Light",
-      dark: "Dark",
-      system: "System",
-    },
-
-    // Languages
-    languages: {
-      en: "🇺🇸 English",
-      id: "🇮🇩 Bahasa Indonesia",
-      meow: "🐱 Meow",
-    },
-
     // Footer
     disclaimer:
       "Terima kasih telah menjadi bagian dari hari kami",
@@ -264,13 +186,6 @@ export const translations = {
     suggestionDrawCat: "Meow meow cat",
     suggestionMousePoem: "Meow poem mouse",
     suggestionCatsPurr: "Meow cats purr?",
-
-    // Models
-    models: {
-      MeowGPT: "MeowGPT",
-      "MeowGPT Turbo": "MeowGPT Turbo",
-      "MeowGPT Mini": "MeowGPT Mini",
-    },
 
     modelDescriptions: {
       MeowGPT: "Meow meow meow meow! 🐱",

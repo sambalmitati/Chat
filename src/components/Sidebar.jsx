@@ -301,70 +301,16 @@ const Sidebar = ({
       </div>
 
       <div className="sidebar-footer">
-        <div className="account-dropdown" ref={accountDropdownRef}>
-          <button
-            ref={accountTriggerRef}
+        <button
             className="account-dropdown-trigger sidebar-account-trigger"
             onClick={() => {
-              if (!isAccountDropdownOpen) {
-                const rect = accountTriggerRef.current.getBoundingClientRect();
-                setDropdownPos({
-                  bottom: window.innerHeight - rect.top + 8,
-                  left: rect.left,
-                });
-              }
-              setIsAccountDropdownOpen(!isAccountDropdownOpen);
+              window.open("https://www.instagram.com/simpulcreative_/", "_blank");
             }}
             title={!isOpen ? t("account") : ""}
           >
-            <div className="account-avatar">FA</div>
-            <span className="sidebar-account-label">{t("account")}</span>
+            <FiInstagram />
+            {isOpen && <span>Developed by Simpul Creative</span>}
           </button>
-
-          {isAccountDropdownOpen && (
-            <div
-              className="account-dropdown-menu account-dropdown-menu--fixed"
-              style={{ bottom: dropdownPos.bottom, left: dropdownPos.left }}
-            >
-              <div className="account-info">
-                <FiInstagram  size={16} />
-                <a
-                  href="https://www.instagram.com/simpulcreative_/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  style={{ color: "inherit", textDecoration: "none" }}
-                >
-                  {t("madeBy")}
-                </a>
-              </div>
-
-              <div className="dropdown-divider"></div>
-
-              <div className="account-menu-item">
-                <FiZap size={16} />
-                <span>{t("upgradePlan")}</span>
-              </div>
-
-              <div className="account-menu-item">
-                <FiSettings size={16} />
-                <span>{t("settings")}</span>
-              </div>
-
-              <div className="dropdown-divider"></div>
-
-              <div className="account-menu-item">
-                <FiHelpCircle size={16} />
-                <span>{t("help")}</span>
-                <FiChevronRight size={16} className="menu-arrow" />
-              </div>
-
-              <div className="account-menu-item">
-                <FiLogOut size={16} />
-                <span>{t("logOut")}</span>
-              </div>
-            </div>
-          )}
-        </div>
       </div>
 
       {isSettingsModalOpen && (

@@ -98,7 +98,7 @@ const fixedResponses = {
 content: `
 <b>Assalamualaikum Warahmatullahi Wabarakatuh</b>
   
-Dengan memohon rahmat dan ridho Allah SWT, kami bermaksud menyelenggarakan acara pernikahan putra-putri kami:
+Dengan memohon rahmat dan ridho Allah SWT, kami bermaksud menyelenggarakan acara pernikahan.
 
 <b>Fitriyatun Nisa</b>
 Putri Bapak Edi Supriyanto dan Ibu Maleha
@@ -115,10 +115,10 @@ Kami yang berbahagia,`},
 <b>Hari & Tanggal:</b>
 Minggu, 21 Juni 2026
 <b>Pukul:</b>
-08.00 WIB – Selesai
+08.00 WIB – 13.00 WIB
 <b>Tempat:</b>
 Kediaman Mempelai Wanita (Perum. Taman Rahayu Regency Blok C7 no.168, RT6, RW8, Ciketingudik, Bantar Gebang, Kota Bekasi, Jawa Barat.)
-<a href="https://maps.app.goo.gl/d4zPdFPogrZfY6uZ7" target="_blank" rel="noopener noreferrer">
+<a href="https://maps.app.goo.gl/mr3k449fVurKFbEs7" target="_blank" rel="noopener noreferrer">
 Lihat Lokasi di Google Maps
 </a>`},
   loveStory: {
@@ -217,24 +217,27 @@ function App() {
 
   // Initialize app data from localStorage
   useEffect(() => {
-        const startMusic = async () => {
-          if (!hasStartedMusic && audioRef.current) {
-            try {
-              await audioRef.current.play();
-              setIsMusicPlaying(true);
-              setHasStartedMusic(true);
-            } catch (err) {
-              console.error("Autoplay blocked:", err);
-            }
-          }
-        };
-  
-        document.addEventListener("pointerdown", startMusic, { once: true });
-  
-        return () => {
-          document.removeEventListener("pointerdown", startMusic);
-        };
-      }, [hasStartedMusic]);
+    if (hasStartedMusic) return;
+
+    const startMusic = async () => {
+      if (!audioRef.current) return;
+
+      try {
+        await audioRef.current.play();
+        setIsMusicPlaying(true);
+        setHasStartedMusic(true);
+        document.removeEventListener("click", startMusic);
+      } catch (err) {
+        console.error(err);
+      }
+    };
+
+    document.addEventListener("click", startMusic);
+
+    return () => {
+      document.removeEventListener("click", startMusic);
+    };
+  }, [hasStartedMusic]);
   useEffect(() => {
     const initializeApp = () => {
       console.log("🚀 Initializing app...");
