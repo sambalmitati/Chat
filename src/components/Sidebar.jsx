@@ -308,7 +308,7 @@ const Sidebar = ({
             }}
             title={!isOpen ? t("account") : ""}
           >
-            <FiInstagram />
+            <FiInstagram size={24}/>
             {isOpen && <span>Developed by Simpul Creative</span>}
           </button>
       </div>
