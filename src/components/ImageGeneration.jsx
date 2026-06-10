@@ -7,7 +7,7 @@ import {
   FiSend,
   FiVolume2,
   FiVolumeX,
-  FiZap,
+  FiAperture,
 } from "react-icons/fi";
 import { useTranslation } from "../translations";
 import img1 from "../assets/1.png";
@@ -148,7 +148,6 @@ const ImageGeneration = ({
           >
             <FiMenu size={20} />
           </button>
-          <span className="img-gen-title-icon"><FiZap size={20} /></span>
           <h1 className="img-gen-title">{t("imageGenerationTitle")}</h1>
         </div>
         {imageGallery.length > 0 && (
