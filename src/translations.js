@@ -37,7 +37,7 @@ export const translations = {
     upgradePlan: "Upgrade plan",
     settings: "Settings",
     help: "Help",
-    madeBy: "Designed for our special day",
+    madeBy: "Developed by Simpul Creative",
 
     // Settings Modal
     settingsTitle: "Settings",
@@ -160,7 +160,7 @@ export const translations = {
     upgradePlan: "Upgrade plan",
     settings: "Settings",
     help: "Help",
-    madeBy: "Designed for our special day",
+    madeBy: "Developed by Simpul Creative",
 
     // Settings Modal
     settingsTitle: "Settings",

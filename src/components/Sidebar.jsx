@@ -10,7 +10,7 @@ import {
   FiImage,
   FiEdit2,
   FiCheck,
-  FiGithub,
+  FiInstagram ,
   FiZap,
   FiSettings,
   FiHelpCircle,
@@ -317,7 +317,7 @@ const Sidebar = ({
             }}
             title={!isOpen ? t("account") : ""}
           >
-            <div className="account-avatar">A</div>
+            <div className="account-avatar">FA</div>
             <span className="sidebar-account-label">{t("account")}</span>
           </button>
 
@@ -327,9 +327,9 @@ const Sidebar = ({
               style={{ bottom: dropdownPos.bottom, left: dropdownPos.left }}
             >
               <div className="account-info">
-                <FiGithub size={16} />
+                <FiInstagram  size={16} />
                 <a
-                  href="https://github.com/dmitthedazed"
+                  href="https://www.instagram.com/simpulcreative_/"
                   target="_blank"
                   rel="noopener noreferrer"
                   style={{ color: "inherit", textDecoration: "none" }}
